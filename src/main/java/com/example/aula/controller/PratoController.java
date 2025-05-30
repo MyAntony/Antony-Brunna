@@ -11,7 +11,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/pratos")
+@RequestMapping("/cadastro")
 public class PratoController
 {
 
