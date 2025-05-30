@@ -22,6 +22,9 @@ public class Prato
     @NotBlank(message = "O nome do prato é obrigatorio.")
     private String nome;
 
+    @Enumerated(EnumType.STRING)
+    private Categoria categoria;
+
     @NotBlank(message = "Descrição do prato.")
     private String descricao;
     
@@ -29,13 +32,27 @@ public class Prato
     @NotNull(message = "O preço do prato é obrigatório.")
     private Double preco;
 
-    @Enumerated(EnumType.STRING)
-    private Categoria categoria;
+    private String url;
 
     @Enumerated(EnumType.STRING)
     private Disponibilidade disponibilidade;
 
-    // Getters and Setters
+    public Prato()
+    {
+
+    }
+
+    public Prato(Long id, String nome, Categoria categoria, String descricao, Double preco, String url, Disponibilidade disponibilidade)
+    {
+        this.id = id;
+        this.nome = nome;
+        this.categoria = categoria;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.url = url;
+        this.disponibilidade = disponibilidade;
+    }
+
     public Long getId() {
         return id;
     }
@@ -50,6 +67,14 @@ public class Prato
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     public String getDescricao() {
@@ -68,12 +93,12 @@ public class Prato
         this.preco = preco;
     }
 
-    public Categoria getCategoria() {
-        return categoria;
+    public String getUrl() {
+        return url;
     }
 
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Disponibilidade getDisponibilidade() {
@@ -83,6 +108,12 @@ public class Prato
     public void setDisponibilidade(Disponibilidade disponibilidade) {
         this.disponibilidade = disponibilidade;
     }
+
+        
+
+    // Getters and Setters
+
+    
 }
 
 

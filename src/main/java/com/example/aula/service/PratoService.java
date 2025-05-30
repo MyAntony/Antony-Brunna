@@ -42,6 +42,7 @@ public class PratoService
         pratoAtualizar.setDescricao(prato.getDescricao());
         pratoAtualizar.setPreco(prato.getPreco());
         pratoAtualizar.setCategoria(prato.getCategoria());
+        pratoAtualizar.setUrl(prato.getUrl());
         pratoAtualizar.setDisponibilidade(prato.getDisponibilidade());
         
         
