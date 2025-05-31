@@ -107,7 +107,7 @@ function FormularioCadastro()
                 <button type="submit">Cadastrar</button>
             </form>
 
-            <button onClick={() => navigate('/jogadores')} className="link-jogadores">
+            <button onClick={() => navigate('/pratos')} className="link-pratos">
                 Ver pratos cadastrados
             </button>
 
