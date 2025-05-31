@@ -23,7 +23,7 @@ function FormularioCadastro()
     {
         try
         {
-            const response = await axios.post('https://antony-brunna.onrender.com/cadastro', {nome, descricao, preco, categoria, disponibilidade, url})
+            const response = await axios.post('https://antony-brunna.onrender.com/pratos', {nome, descricao, preco, categoria, disponibilidade, url})
             exibirMensagem(response.data.mensagem || 'Prato cadastrado com sucesso!', 'sucesso')
             setNome('')
             setDescricao('')
