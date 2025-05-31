@@ -108,9 +108,9 @@ function FormularioCadastro()
             </form>
 
             <button onClick={() => navigate('/jogadores')} className="link-jogadores">
-                Ver usuários cadastrados
+                Ver pratos cadastrados
             </button>
-            
+
             <MensagemFeedback
                 mensagem={mensagem}
                 tipo={tipoMensagem}
